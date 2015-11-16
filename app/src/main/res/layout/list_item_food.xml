@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_item_food"
+        android:layout_marginRight="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txtname_item_food"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/img_item_food"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txtprice_item_food"
+        android:layout_below="@+id/txtname_item_food"
+        android:layout_toRightOf="@+id/img_item_food"
+        android:textColor="#ff000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txtquantity_item_food"
+        android:layout_below="@+id/txtprice_item_food"
+        android:layout_toRightOf="@+id/img_item_food"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/btncomprar_item_food"
+        android:layout_toRightOf="@+id/txtprice_item_food"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ff000000"
+        android:layout_marginLeft="100dp"/>
+
+</RelativeLayout>
