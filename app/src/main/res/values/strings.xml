@@ -15,4 +15,20 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="login_user">Usuario</string>
+    <string name="login_passwd">Clave</string>
+    <string name="login_btn">Login</string>
+    <string name="Clean_btn">Limpiar</string>
+
+    //Mensaje de error de la aplicacion
+    <string name="errorTitleMsg">Error</string>
+    <string name="errorMsgConexion">Por favor, Revise su conexión a Internet</string>
+    <string name="errorAuthMessage">Usuario o Clave Invalidos!</string>
+
+    //http login params
+    <string name="param_user">usuario</string>
+    <string name="param_passwd">pass</string>
+
+    //Urls
+    <string name="url_login">main</string>
 </resources>

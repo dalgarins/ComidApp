@@ -7,15 +7,13 @@ public class Comida {
 
     private String nombre;
     private long precio;
-    private long nitRestaurante;
 
     public Comida() {
     }
 
-    public Comida(String nombre, long precio, long nitRestaurante) {
+    public Comida(String nombre, long precio) {
         this.nombre = nombre;
         this.precio = precio;
-        this.nitRestaurante = nitRestaurante;
     }
 
     public String getNombre() {
@@ -32,13 +30,5 @@ public class Comida {
 
     public void setPrecio(long precio) {
         this.precio = precio;
-    }
-
-    public long getNitRestaurante() {
-        return nitRestaurante;
-    }
-
-    public void setNitRestaurante(long nitRestaurante) {
-        this.nitRestaurante = nitRestaurante;
     }
 }

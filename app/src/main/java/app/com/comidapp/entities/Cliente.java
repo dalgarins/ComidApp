@@ -9,6 +9,7 @@ public class Cliente {
     private String nombre;
     private String telefono;
     private Pedido pedidos;
+    private boolean status;
 
     public Cliente() {
     }
@@ -50,5 +51,13 @@ public class Cliente {
 
     public void setPedidos(Pedido pedidos) {
         this.pedidos = pedidos;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 }

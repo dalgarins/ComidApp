@@ -52,14 +52,9 @@ public class RestaurantAdapter extends ArrayAdapter<Restaurante> {
         TextView txtPhone = (TextView)listItemView.findViewById(R.id.txtphone_item_restaurant);
         txtPhone.setText(restaurante.getDireccion());
 
-        /*ImageView imageViewPhoto = (ImageView) listItemView.findViewById(R.id.img_item_restaurant);
+        ImageView imageViewPhoto = (ImageView) listItemView.findViewById(R.id.img_item_restaurant);
 
-        //Agrega el icono si el prosesor ha sido evaluado o no
-        if (!restaurante.getEstadoEval().equalsIgnoreCase(listItemView.getResources().getString(R.string.estadoProfesorFinalizado))) {
-            imageViewPhoto.setImageDrawable(getContext().getResources().getDrawable(R.drawable.error_check));
-        }else {
-            imageViewPhoto.setImageDrawable(getContext().getResources().getDrawable(R.drawable.ok_ckeck));
-        }*/
+        imageViewPhoto.setImageDrawable(getContext().getResources().getDrawable(R.drawable.restaurant_of_the_year));
         return listItemView;
     }
 }
