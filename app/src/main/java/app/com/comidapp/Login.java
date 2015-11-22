@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import app.com.comidapp.entities.AbstractActivity;
+import app.com.comidapp.listener.OnClickListenerLogin;
 import app.com.comidapp.service.LocalService;
 
 public class Login extends AbstractActivity {
@@ -19,6 +19,7 @@ public class Login extends AbstractActivity {
         txtUser = (EditText) findViewById(R.id.txtUser);
         txtPassword = (EditText) findViewById(R.id.txtPasswd);
         btnLogin = (Button) findViewById(R.id.btnOk);
+        btnLogin.setOnClickListener(new OnClickListenerLogin(this));
         btnClean = (Button) findViewById(R.id.btnClean);
         btnClean.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +39,14 @@ public class Login extends AbstractActivity {
             return true;
         }
         return false;
+    }
+
+    public String getUser() {
+        return txtUser.getText().toString().trim();
+    }
+
+    public String getPasswd() {
+        return txtPassword.getText().toString().trim();
     }
 
     @Override

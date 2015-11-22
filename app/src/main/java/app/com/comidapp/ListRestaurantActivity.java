@@ -1,13 +1,46 @@
 package app.com.comidapp;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.view.Menu;
+import android.widget.ListView;
 
-public class ListRestaurantActivity extends AppCompatActivity {
+import app.com.comidapp.adapter.RestaurantAdapter;
+import app.com.comidapp.listener.OnItemClickListenerListViewRestaurant;
+import app.com.comidapp.service.LocalService;
+
+public class ListRestaurantActivity extends AbstractActivity {
+
+    private ListView lstRestaurante;
+    private RestaurantAdapter adapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void getDataOnServiceConnect(LocalService connectService) {
+        if (connectService != null){
+
+            adapter = new RestaurantAdapter(getApplicationContext(),connectService.getListaRestaurantes().getArrayList());
+            lstRestaurante.setAdapter(adapter);
+            lstRestaurante.setOnItemClickListener(new OnItemClickListenerListViewRestaurant(this));
+        }
+    }
+
+    @Override
+    public void hookOnCreate() {
         setContentView(R.layout.activity_list_restaurant);
+
+        lstRestaurante = (ListView)findViewById(R.id.lstRestaurant);
+    }
+
+    @Override
+    public void hookOnStart() {
+
+    }
+
+    @Override
+    public void hookOnPause() {
+
+    }
+
+    @Override
+    public void hookOnCreateOptionsMenu(Menu menu) {
+
     }
 }

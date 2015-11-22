@@ -6,7 +6,7 @@ import com.request.core.conexion.ConexionGenerica;
 
 import app.com.comidapp.Login;
 import app.com.comidapp.R;
-import app.com.comidapp.entities.AbstractActivity;
+import app.com.comidapp.AbstractActivity;
 import app.com.comidapp.entities.ListaRestaurantes;
 
 /**
@@ -17,6 +17,8 @@ public class GetRestaurantAsync extends ExecuteAbstractAsync<ListaRestaurantes> 
     public GetRestaurantAsync(AbstractActivity mainActivity, Intent intent) {
         super(mainActivity, intent);
     }
+
+
 
     @Override
     public void hookOnPostExecute(ListaRestaurantes listaRestaurantes) {
@@ -31,7 +33,7 @@ public class GetRestaurantAsync extends ExecuteAbstractAsync<ListaRestaurantes> 
             if (login.getConnectService() != null ){
 
                 ConexionGenerica<ListaRestaurantes> cv = new ConexionGenerica<ListaRestaurantes>(login.getConnectService().getData(),
-                        login.getConnectService().getData().getRequestList().get(getActivity().getString(R.string.url_login)),
+                        login.getConnectService().getData().getRequestList().get(getActivity().getString(R.string.url_restaurantes)),
                         login.getConnectService().getHttpClient(), null){};
 
                 if (cv.getResponseCode() == 200){

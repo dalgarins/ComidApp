@@ -1,4 +1,4 @@
-package app.com.comidapp.entities;
+package app.com.comidapp;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;

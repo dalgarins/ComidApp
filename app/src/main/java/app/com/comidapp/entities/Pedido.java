@@ -1,11 +1,12 @@
 package app.com.comidapp.entities;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 
 /**
  * Created by dalgarin on 16/11/2015.
  */
-public class Pedido {
+public class Pedido implements Serializable{
 
     private LinkedList<Comida> listaPedidos;
 

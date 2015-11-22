@@ -1,9 +1,11 @@
 package app.com.comidapp.entities;
 
+import java.io.Serializable;
+
 /**
  * Created by dalgarin on 16/11/2015.
  */
-public class Cliente {
+public class Cliente implements Serializable{
 
     private long cedula;
     private String nombre;

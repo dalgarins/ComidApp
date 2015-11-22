@@ -1,11 +1,12 @@
 package app.com.comidapp.entities;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by NoaD on 22/11/2015.
  */
-public class ListaRestaurantes {
+public class ListaRestaurantes implements Serializable{
 
     private ArrayList<Restaurante> arrayList;
 

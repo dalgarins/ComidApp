@@ -1,9 +1,11 @@
 package app.com.comidapp.entities;
 
+import java.io.Serializable;
+
 /**
  * Created by dalgarin on 16/11/2015.
  */
-public class Comida {
+public class Comida implements Serializable{
 
     private String nombre;
     private long precio;

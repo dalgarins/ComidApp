@@ -7,7 +7,7 @@ import java.util.LinkedList;
 
 import app.com.comidapp.Login;
 import app.com.comidapp.R;
-import app.com.comidapp.entities.AbstractActivity;
+import app.com.comidapp.AbstractActivity;
 import app.com.comidapp.entities.Cliente;
 
 /**

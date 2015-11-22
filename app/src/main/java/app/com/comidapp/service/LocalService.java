@@ -14,6 +14,7 @@ import java.net.CookiePolicy;
 
 import app.com.comidapp.R;
 import app.com.comidapp.entities.Cliente;
+import app.com.comidapp.entities.ListaComidas;
 import app.com.comidapp.entities.ListaRestaurantes;
 
 
@@ -26,6 +27,7 @@ public class LocalService extends Service implements Serializable {
     private OkHttpClient httpClient;
     private Cliente cliente;
     private ListaRestaurantes listaRestaurantes;
+    private ListaComidas listaComidasByRestaurant;
 
 
     private final IBinder service = new ConnectBinder();
@@ -99,5 +101,13 @@ public class LocalService extends Service implements Serializable {
 
     public void setListaRestaurantes(ListaRestaurantes listaRestaurantes) {
         this.listaRestaurantes = listaRestaurantes;
+    }
+
+    public ListaComidas getListaComidasByRestaurant() {
+        return listaComidasByRestaurant;
+    }
+
+    public void setListaComidasByRestaurant(ListaComidas listaComidasByRestaurant) {
+        this.listaComidasByRestaurant = listaComidasByRestaurant;
     }
 }

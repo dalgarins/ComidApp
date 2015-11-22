@@ -29,6 +29,23 @@
     <string name="param_user">usuario</string>
     <string name="param_passwd">pass</string>
 
+    //http food params
+    <string name="param_restaurant_id">nit</string>
+
     //Urls
     <string name="url_login">main</string>
+    <string name="url_restaurantes">restaurante</string>
+    <string name="url_comidas">comidas</string>
+
+    //panel admin
+    <string name="login">Autenticar</string>
+    <string name="login_msg">Validando usuario...</string>
+    <string name="login_empty_detail">Por favor ingresa tu usuario y tu clave!</string>
+    <string name="info">Info</string>
+    <string name="title_activity_list_food">ListFoodActivity</string>
+
+    //panel restaurante
+    <string name="title_restaurante_list">Restaurante</string>
+    <string name="msg_restaurante_list">Actualizando Comidas...</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

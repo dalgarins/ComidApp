@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 
 import app.com.comidapp.R;
-import app.com.comidapp.entities.AbstractActivity;
+import app.com.comidapp.AbstractActivity;
 
 /**
  * Permite encadenar conexiones http asincronas
