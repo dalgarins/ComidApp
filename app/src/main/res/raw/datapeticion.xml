@@ -1,9 +1,5 @@
 <Data>
   <PublicHeaders>
-    <Opcion>
-      <key>Host</key>
-      <value>www.logirastreo.com</value>
-    </Opcion>
 	<Opcion>
       <key>User-Agent</key>
       <value>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36</value>
@@ -14,7 +10,7 @@
       <ID>main</ID>
       <Shema class="SchemaRequest">
         <idRequest>1</idRequest>
-        <url>http://www.logirastreo.com/login.php</url>
+        <url>http://authbypass-idevelapp.rhcloud.com/login</url>
         <httpMethod>post</httpMethod>
         <headers />
         <requestForm />
@@ -27,21 +23,28 @@
       </Shema>
     </NodeRequest>
 	<NodeRequest>
-      <ID>posiciones</ID>
+      <ID>restaurante</ID>
       <Shema class="SchemaRequest">
         <idRequest>1</idRequest>
-        <url>http://www.logirastreo.com/jsonPosicionCliente.php</url>
-        <httpMethod>get</httpMethod>
-        <headers>
-          <Opcion>
-            <key>Host</key>
-            <value>www.logirastreo.com</value>
-          </Opcion>
-          <Opcion>
-            <key>User-Agent</key>
-            <value>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36</value>
-          </Opcion>
-        </headers>
+        <url>http://authbypass-idevelapp.rhcloud.com/restaurantes</url>
+        <httpMethod>post</httpMethod>
+        <headers />
+        <requestForm />
+        <settings />
+        <verbose>true</verbose>
+        <startTime>0</startTime>
+        <leadTime>5</leadTime>
+        <hasMoreRequest>false</hasMoreRequest>
+        <idNextRequest>0</idNextRequest>
+      </Shema>
+    </NodeRequest>
+    <NodeRequest>
+      <ID>comidas</ID>
+      <Shema class="SchemaRequest">
+        <idRequest>1</idRequest>
+        <url>http://authbypass-idevelapp.rhcloud.com/comidas</url>
+        <httpMethod>post</httpMethod>
+        <headers />
         <requestForm />
         <settings />
         <verbose>true</verbose>

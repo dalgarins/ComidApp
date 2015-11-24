@@ -1,5 +1,6 @@
 package app.com.comidapp;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
@@ -22,19 +23,12 @@ import app.com.comidapp.service.LocalService;
  * para continuar con el funcionamiento normal de las activities
  * Created by NoaD on 30/08/2015.
  */
-public abstract class AbstractActivity extends AppCompatActivity {
+public abstract class AbstractActivity extends Activity {
 
     private LocalService connectService;//Servicio para compartir datos dentro de la aplicacion
     private ProgressDialog progressDialog;
 
-    /**
-     * Maneja el evento de regresar entre actividades
-     */
-    @Override
-    public void onBackPressed() {
 
-    }
-    
     /**
      * Maneja la conexion hacia el servicio, se debe sobreescribir el metodo hookOnStart
      * si se desea continuar con el funcionamiento normal
